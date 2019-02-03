@@ -5,6 +5,12 @@ module.exports = async function pomodoro(
     stepDuration = 1000 * 60,
     stepName = 'minute'
 ) {
+    const currentTime = new Date().toLocaleTimeString('en', {
+        hour: '2-digit',
+        minute: '2-digit'
+    });
+    console.log(`Started working at ${currentTime}.`);
+
     notifier.notify({
         title: `Do thing for ${pluralize(stepName, totalSteps)}.`,
         message: 'Or else!',
@@ -14,6 +20,8 @@ module.exports = async function pomodoro(
     await runInterval(totalSteps, stepDuration, (stepCount) => {
         console.log(`Still ${pluralize(stepName, totalSteps - stepCount)} to go.`);
     });
+
+    console.log(`Time's up.`);
 
     notifier.notify({
         title: `Okay, you can rest now.`,
