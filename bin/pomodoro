@@ -1,7 +1,10 @@
 #!/usr/bin/env node
 const pomodoro = require('../index.js');
-const totalSteps = Number(process.argv[2]) || undefined;
-const stepDuration = Number(process.argv[3]) || undefined;
-const stepName = process.argv[4];
+const minimist = require('minimist');
+const argv = minimist(process.argv);
+
+const totalSteps = argv['d'] || argv['duration'];
+const stepDuration = argv['i'] || argv['interval'];
+const stepName = argv['n'] || argv['interval-name'];
 
 pomodoro(totalSteps, stepDuration, stepName);

@@ -9,6 +9,7 @@
   "author": "UnShame",
   "license": "ISC",
   "dependencies": {
+    "minimist": "^1.2.0",
     "node-notifier": "^5.3.0"
   },
   "repository": {
