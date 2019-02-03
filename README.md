@@ -1,3 +1,5 @@
+<img align="right" alt="Pomodoro" src="./icons/icon_work.png">  
+
 # Pomodoro
 
 ## Usage:  
