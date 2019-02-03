@@ -1,6 +1,10 @@
 <img align="right" alt="Pomodoro" src="./icons/icon_work.png">  
 
-# Pomodoro
+# Pomodoro  
+
+Not feeling stressed enough from work? Why not add an angry tomato that bothers you every 25 minutes with cross-platform notifications!*  
+
+\* notifications might not be cross-platform
 
 ### Usage:  
 
