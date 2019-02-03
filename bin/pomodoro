@@ -1,0 +1,7 @@
+#!/usr/bin/env node
+const pomodoro = require('../index.js');
+const totalSteps = Number(process.argv[2]) || undefined;
+const stepDuration = Number(process.argv[3]) || undefined;
+const stepName = process.argv[4];
+
+pomodoro(totalSteps, stepDuration, stepName);
