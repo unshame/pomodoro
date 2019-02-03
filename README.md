@@ -14,3 +14,11 @@
 | [-d \| --duration \<number>]      | the total timer duration in minutes, seconds, hours etc.    | 25       |
 | [-i \| --interval \<number>]      | the interval of a minute, second, hour etc. in milliseconds | 60000    |
 | [-n \| --interval-name \<string>] | the name of the interval                                    | "minute" |
+
+### Can be used as a node module:
+
+```javascript
+const pomodoro = require('pomodoro');
+await pomodoro(duration, interval, intervalName);
+// do something else when it finishes
+```
