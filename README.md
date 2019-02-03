@@ -2,12 +2,12 @@
 
 # Pomodoro
 
-## Usage:  
+### Usage:  
 
     ./bin/pomodoro [-d <number>] [-i <number>] [-n <string>]
     npm start --   [-d <number>] [-i <number>] [-n <string>]
 
-## Options:
+### Options:
    
 | Option                            | Description                                                 | Default  |
 |-----------------------------------|-------------------------------------------------------------|----------|
